@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.new-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+    width: 50%;
+    padding: 60px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.new-item-title {
+    font-size: 1.5rem;
+}
+
+#item {
+    border: 0;
+    border-bottom: 2px solid;
+    padding: 2px 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 80%;
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+h1 {
+    margin-left: 5em;
+    margin-bottom: 10px;
+}
+
+/* .list {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+} */
+
+.list {
+    margin: 13px 0 0 12em;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list li:has(input:checked) label {
+    color: hsl(200, 20%, 40%);
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  
+  .list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .list li label {
+    display: flex;
+    gap: 0.25rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .list li:has(input:focus-visible) label {
+    outline: 1px solid hsl(200, 100%, 50%);
+  }
+  
+  .list li input {
+    outline: none;
+    width: 0;
+    height: 0;
+    appearance: none;
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  .list li label::before {
+    content: "";
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: hsl(200, 100%, 90%);
+    border-radius: 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list li label:hover::before {
+    background: hsl(200, 100%, 80%);
+  }
+  
+  .list li:has(input:checked) label::before {
+    content: "✔";
+    background: hsl(200, 100%, 40%);
+    color: hsl(200, 100%, 90%);
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .list li:has(input:checked) label:hover::before {
+    background: hsl(200, 100%, 30%);
+  }
+
+.btn-danger {
+    background-color: red;
+    margin-left: 6px;
+}
